@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.personal-info{
+    font-family: 'Inter';
+    color: #000000;
+    
+}
+
+p{
+    font-size: 16pt;
+    text-align: justify;
+
+}
+
+.contact{
+    text-align: center;
+    font-size: 24pt;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu a{
+    padding: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    color: #000000;
+}
+
+.icons-names{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    padding: 2em;
+}
+
+.page{
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+.parallax-container {
+    height: 50vh;
+    position: relative;
+  }
+  
+  .parallax-image {
+    background-image: url('pittsburgh.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.portrait{
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 50em){
+    .menu a{
+        font-size: 2em;
+        padding: 2em;
+    }
+    .portrait{
+        float:left;
+        flex-direction: row;
+        width: 40%;
+        padding-right: 1em;
+    }
+}
+
+

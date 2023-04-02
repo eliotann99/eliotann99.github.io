@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- script to load another html into this page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- script to add parallax effect to image using js -->
+    <script>
+        const parallaxImage = document.querySelector('.parallax-image');
+        window.addEventListener('scroll', () => {
+          const scrollY = window.pageYOffset;
+          parallaxImage.style.transform = `translate3d(0, ${scrollY * 0.5}px, 0)`;
+        });</script>
+</head>
+<body>    
+    <div class="page">
+        <div class="container">
+            <header>
+            <h1 class="personal-info">Welcome!</h1>
+            <script>
+                $(function(){
+                $("#nav-bar").load("menu.html");
+                });
+            </script>
+            <div id="nav-bar"></div>
+            </header>
+        </div>
+    </div>
+            <div class="parallax-container">
+                <div class="parallax-image"></div>
+            </div>
+    <div class="page">
+        <div class="container">
+            <section>
+            <h2 class="personal-info">About:</h2>
+            <img class="portrait" src="portrait.jpg" alt="Picture of me">
+            <p class="about">My name is Elio Tannous and I'm a senior student at the University of Pittsburgh!
+                I'm studying Digital Narrative &amp; Interactive Design (DNID) and minoring in Computer Science.
+                I look forward to applying the differrent skill sets that I have acquired over the years in the
+                work field after graduation. Overtime, I've had many  peopple describe me as confident, friendly,
+                and reliable.
+            </p><br>
+            <p>Currently, I live in south Oakland as I go to school. However, I come thirty minutes north of
+                Pittsburgh. I worked as an Aldi crew member throughout most of my college years. This experience
+                has helped me fine tune my customer service skills.
+            </p><br>
+            <p>Often times, I tend to show interest in more hobbies than I can keep up with. However, jumping rorpe,
+                playing pickle ball, watching moves, and hanging out with freinds are some of the interests that
+                stuck with me over the years.
+            </p>
+            </section>
+        </div>
+    </div>
+
+    
+</body>
+</html>
