@@ -75,8 +75,7 @@ iframe{
     font-family: 'Inter';
 }
 
-/* use this code if you're adding a multiple images */
-/* .slideshow{
+.slideshow{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,7 +86,7 @@ iframe{
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-} */
+}
 
 .project-links{
     text-decoration: none;
