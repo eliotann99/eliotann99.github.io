@@ -75,7 +75,7 @@ iframe{
     font-family: 'Inter';
 }
 
-.slideshow{
+/* .slideshow{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,7 +86,7 @@ iframe{
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
-}
+} */
 
 .project-links{
     text-decoration: none;
@@ -180,11 +180,11 @@ span.tag{
         align-items: center;
         padding: 3em;
     }
-    .slideshow{
+    /* .slideshow{
         flex-direction: row;
     }
     .slideshow img{
         max-width: 33%;
-    }
+    } */
     
 }
