@@ -40,6 +40,7 @@ hr{
     font-size: 24pt;
 }
 
+
 .menu{
     display: flex;
     justify-content: center;
@@ -47,7 +48,7 @@ hr{
 }
 
 .menu a{
-    padding: 1em;
+    margin: 1em;
     font-size: 1.5em;
     text-decoration: none;
     font-family: 'Pacifico', cursive;
@@ -177,7 +178,7 @@ span.tag{
 @media (min-width: 40em){
     .menu a{
         font-size: 2em;
-        padding: 2em;
+        margin: 2em;
     }
     .portrait{
         float:left;
