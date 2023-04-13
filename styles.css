@@ -69,6 +69,15 @@ iframe{
     padding: 2em;
 }
 
+.icons-names a:hover{
+    transform: scale(1.2);
+    color: #525252;
+}
+
+.icons-names a:hover svg path{
+    fill: #525252;
+}
+
 
 .project-images{
     border: 1px solid lightgray;
