@@ -71,16 +71,13 @@ iframe{
 
 .icons-names a:hover{
     transform: scale(1.2);
-    color: #525252;
-}
-
-.icons-names a:hover svg path{
-    fill: #525252;
+    color: #000000;
 }
 
 
 .project-images{
-    border: 1px solid lightgray;
+    margin-top: .5em;
+    border: 1px solid #ADADAD;
     max-width: 100%;
     max-height: 100%;
 }
@@ -91,7 +88,7 @@ iframe{
     font-family: 'Inter';
 }
 
-.slideshow{
+.mobile-ui{
     padding-top: .5em;
     display: flex;
     justify-content: space-between;
@@ -99,7 +96,7 @@ iframe{
     justify-content: center;
 }
 
-.slideshow img{
+.mobile-ui img{
     margin: .1em;
     max-width: 100%;
     max-height: 100%;
@@ -204,10 +201,10 @@ span.tag{
         align-items: center;
         padding: 3em;
     }
-    .slideshow{
+    .mobile-ui{
         flex-direction: row;
     }
-    .slideshow img{
+    .mobile-ui img{
         max-width: 32%;
     } 
     
