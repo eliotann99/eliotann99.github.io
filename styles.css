@@ -89,6 +89,19 @@ iframe{
     font-family: 'Inter';
 }
 
+.twine {
+    padding-top: .5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.twine img{
+    margin: .1em;
+    max-width: 100%;
+}
+
 .mobile-ui{
     padding-top: .5em;
     display: flex;
@@ -100,8 +113,6 @@ iframe{
 .mobile-ui img{
     margin: .1em;
     max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
     border: 2px solid black;
 }
 
@@ -207,6 +218,12 @@ span.tag{
         justify-content: center;
         align-items: center;
         padding: 3em;
+    }
+    .twine{
+        flex-direction: row;
+    }
+    .twine img{
+        max-width: 49%;
     }
     .mobile-ui{
         flex-direction: row;
