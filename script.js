@@ -1,3 +1,4 @@
+// add scroll feature
 const backToTop = document.querySelector('#back-to-top');
 let lastScrollTop = 0;
 
@@ -10,3 +11,11 @@ window.addEventListener('scroll', function() {
   }
   lastScrollTop = scrollTop;
 });
+    
+
+
+// load menu.html into other files
+$(function(){
+$("#nav-bar").load("menu.html");
+});
+

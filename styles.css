@@ -129,6 +129,12 @@ iframe{
     transition: opacity 0.3s ease-in-out;
 }
 
+@media (min-width: 100em){
+    #back-to-top{
+        right: 10%;
+    }
+}
+
 #back-to-top svg:hover{
     opacity: .5;
 }

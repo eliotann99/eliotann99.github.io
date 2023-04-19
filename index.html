@@ -15,18 +15,13 @@
         window.addEventListener('scroll', () => {
           const scrollY = window.pageYOffset;
           parallaxImage.style.transform = `translate3d(0, ${scrollY * 0.5}px, 0)`;
-        });</script>
+    });</script>
 </head>
 <body>    
     <div class="page">
         <div class="container">
             <header>
             <h1 class="personal-info">Welcome!</h1>
-            <script>
-                $(function(){
-                $("#nav-bar").load("menu.html");
-                });
-            </script>
             <div id="nav-bar"></div>
             </header>
         </div>
@@ -55,7 +50,7 @@
             </section>
         </div>
     </div>
-
+    <script src="script.js"></script>
     
 </body>
 </html>
