@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+
 
 html{
     scroll-behavior: smooth;
@@ -19,7 +21,7 @@ body{
 }
 
 .personal-info{
-    font-family: 'Pacifico', cursive;
+    font-family:'Oleo Script', cursive;
     color: #000000;
 }
 
@@ -56,7 +58,7 @@ hr{
     margin: 1em;
     font-size: 1.5em;
     text-decoration: none;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Oleo Script', cursive;
     font-style: normal;
     color: #427AA1;
 }
@@ -164,7 +166,7 @@ audio {
     flex-direction: column;
     align-items: center;
     color: #427AA1;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Oleo Script', cursive;
 }
 
 
