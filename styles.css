@@ -133,12 +133,6 @@ iframe{
     opacity: .5;
 }
 
-@media (hover: none) {
-    #back-to-top svg:{
-        opacity: 1;
-    }
-}
-
 #back-to-top.show {
     opacity: 1;
   }
