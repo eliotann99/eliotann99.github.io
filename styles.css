@@ -1,17 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #E8E9EB;
     /*  D3D0CB timberwolf
         C2D3CD ash gray
         DBE4EE alice blue
         EFF1ED white smoke  */
   }
 
+body{
+    background-color: #E8E9EB;
+}
 
 .personal-info{
     font-family: 'Pacifico', cursive;
@@ -116,10 +121,24 @@ iframe{
     border: 2px solid black;
 }
 
-.top{
-    margin: 1em;
-    display: flex;
-    justify-content: center;
+#back-to-top{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#back-to-top svg:hover{
+    opacity: .5;
+}
+
+#back-to-top.show {
+    opacity: 1;
+  }
+
+#back-to-top .desktop{
+    display: none;
 }
 
 .project-links{
@@ -192,6 +211,7 @@ span.tag{
 }
 
 
+
 @media (min-width: 40em){
     .menu a{
         font-size: 2em;
@@ -231,5 +251,11 @@ span.tag{
     .mobile-ui img{
         max-width: 32%;
     } 
+    #back-to-top .mobile{
+        display: none;
+    }
+    #back-to-top .desktop{
+        display: block;
+    }
     
 }
