@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*  D3D0CB timberwolf
+        C2D3CD ash gray
+        DBE4EE alice blue
+        EFF1ED white smoke  */
+  }
+
+body{
+    background-color: #E8E9EB;
+    /* so the back-to-top button doesn't cover content */
+    padding-bottom: 3em;
+}
+
+.personal-info{
+    font-family:'Oleo Script', cursive;
+    color: #000000;
+}
+
+a:hover{
+    color: #7DAACA;
+}
+
+p{
+    font-size: 16pt;
+    text-align: justify;
+    padding-top: .5em;
+}
+
+hr{
+    margin: 2em;
+    height: 2px; 
+    background-color: black; 
+    border: none; 
+}
+
+.contact{
+    text-align: center;
+    font-size: 24pt;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+
+}
+
+.menu a{
+    margin: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Oleo Script', cursive;
+    font-style: normal;
+    color: #427AA1;
+}
+
+.menu a:hover{
+    color: #7DAACA;
+}
+
+iframe{
+    width: 100%;
+}
+
+.icons-names{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.icons-names a:hover{
+    transform: scale(1.2);
+    color: #000000;
+}
+
+
+.project-images{
+    margin-top: .5em;
+    border: 1px solid #ADADAD;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.project-text{
+    color: #DE3C4B;
+    font-family: 'Inter';
+}
+
+.twine {
+    padding-top: .5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.twine img{
+    margin: .1em;
+    max-width: 100%;
+}
+
+.mobile-ui{
+    padding-top: .5em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mobile-ui img{
+    margin: .1em;
+    max-width: 100%;
+    border: 2px solid black;
+}
+
+#back-to-top{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (min-width: 100em){
+    #back-to-top{
+        right: 10%;
+    }
+}
+
+#back-to-top svg:hover{
+    opacity: .5;
+}
+
+#back-to-top.show {
+    opacity: 1;
+  }
+
+#back-to-top .desktop{
+    display: none;
+}
+
+.project-links{
+    text-decoration: none;
+    color: #427AA1;
+    font-family: 'Inter';
+}
+
+audio {
+    width: 100%;
+    padding: .5em;
+  }
+ 
+.audio-div{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #427AA1;
+    font-family: 'Oleo Script', cursive;
+}
+
+
+.tag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    margin: 2em;
+}
+
+.page{
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 50em;
+}
+
+.parallax-container {
+    height: 50vh;
+    position: relative;
+  }
+  
+  .parallax-image {
+    background-image: url('../images/pittsburgh.png');
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+.portrait{
+    display: block;
+    width: 100%;
+}
+
+span.tag{
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 40em){
+    p{
+        padding: 0em;
+    }
+    .menu a{
+        font-size: 2em;
+        margin: 2em;
+    }
+    .portrait{
+        float:left;
+        flex-direction: row;
+        width: 50%;
+        padding-right: 1em;
+    }
+    .social-media{
+        /* commented out the grid until I add another way to contact me again */
+        /* display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        */
+        padding: 2em; 
+        flex-direction: row;
+        justify-content: center;
+    }
+    .icons-names{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3em;
+    }
+    .twine{
+        flex-direction: row;
+    }
+    .twine img{
+        max-width: 49%;
+    }
+    .mobile-ui{
+        flex-direction: row;
+    }
+    .mobile-ui img{
+        max-width: 32%;
+    } 
+    #back-to-top .mobile{
+        display: none;
+    }
+    #back-to-top .desktop{
+        display: block;
+    }
+    
+}
