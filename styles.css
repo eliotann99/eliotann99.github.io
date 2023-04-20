@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 
-
-
 html{
     scroll-behavior: smooth;
 }
@@ -18,6 +16,8 @@ html{
 
 body{
     background-color: #E8E9EB;
+    /* so the back-to-top button doesn't cover content */
+    padding-bottom: 3em;
 }
 
 .personal-info{
@@ -32,7 +32,7 @@ a:hover{
 p{
     font-size: 16pt;
     text-align: justify;
-
+    padding-top: .5em;
 }
 
 hr{
@@ -221,6 +221,9 @@ span.tag{
 
 
 @media (min-width: 40em){
+    p{
+        padding: 0em;
+    }
     .menu a{
         font-size: 2em;
         margin: 2em;
