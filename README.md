@@ -1,4 +1,4 @@
 # eliotann99.github.io
 
 
-Building a portfolio that houses projects I have worked on so potential employers can view them.
+This is a portfolio with some of the projects I have worked on.
